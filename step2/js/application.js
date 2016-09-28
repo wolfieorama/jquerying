@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  // $('button').on('click', function(){
-  //   var price = $(this).data('price');
-  //   $(this).after(price);
-  //   // $(this).closest('.vacation').append(price);
-  //   // $('.vacation').append(price); // price.appendTo($('#vacation'))
-  //   // $('.vacation').on('click', 'button', function(){}); event delegation for all buttons inside the ,vacation class
-  //   $(this).remove();
-  // });
+  $('button').on('click', function(){
+    var price = $(this).data('price');
+    $(this).after(price);
+    // $(this).closest('.vacation').append(price);
+    // $('.vacation').append(price); // price.appendTo($('#vacation'))
+    // $('.vacation').on('click', 'button', function(){}); event delegation for all buttons inside the ,vacation class
+    $(this).remove();
+  });
 
 
   // $('#filter').on('click', '.onsale-filter', function(){
@@ -29,13 +29,22 @@ $(document).ready(function(){
 
 });
 
+//adding text
+$(document).ready(function() {
+  $('.tour').on('click', 'button', function() {
+    var tour = $(this).closest('.tour');
+    var discount = tour.data('discount');
+    var message = $('<span>Call 1-555-jquery-air for a $' + discount + ' discount.</span>');
+    tour.append(message);
+    $(this).remove();
+  });
+});
 
-// $(document).ready(function() {
-//   $('.tour').on('click', 'button', function() {
-//     var tour = $(this).closest('.tour');
-//     var discount = tour.data('discount');
-//     var message = $('<span>Call 1-555-jquery-air for a $' + discount + ' discount.</span>');
-//     tour.append(message);
-//     $(this).remove();
-//   });
-// });
+//slideToggle
+$(document).ready(function() {
+  $("#tour").on('click', 'button', function() {
+    $('.photos').slideToggle();
+  });
+});
+
+//mouseOver, click, focusin, mousedown, mousemove, mouseenter, dblclick, focusout, mouseup, mouseout, mouseleave
