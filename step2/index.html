@@ -21,9 +21,26 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">.col-md-4</div>
         <div class="col-md-4">
           <div class="panel panel-default">
+            <div class="panel panel-header">
+              <h3>Mexico Trip</h3>
+            </div>
+            <div class="holiday onsale panel panel-body">
+              <p>Viva Mexico</p>
+              <ul>
+                <li>Enjoy Tequila</li>
+                <li>Enjoy Borito</li>
+                <li>Wear Somboler......</li>
+              </ul>
+            </div>
+            <div class="vacation panel panel-footer">
+              <button data-price="$90.00">Get price</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="holiday nosale panel panel-default">
             <div class="panel panel-header">
               <h3>Mexico Trip</h3>
             </div>
@@ -35,17 +52,39 @@
                 <li>Wear Somboler......</li>
               </ul>
             </div>
-            <div class="panel panel-footer">
-              <button>For only $344</button>
+            <div class="vacation panel panel-footer">
+              <button data-price="$194.00">Get price</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">
+          <div class="holiday nosale panel panel-default">
+            <div class="panel panel-header">
+              <h3>Mexico Trip</h3>
+            </div>
+            <div class="panel panel-body">
+              <p>Viva Mexico</p>
+              <ul>
+                <li>Enjoy Tequila</li>
+                <li>Enjoy Borito</li>
+                <li>Wear Somboler......</li>
+              </ul>
+            </div>
+            <div class="vacation panel panel-footer">
+              <button data-price="$190.00">Get price</button>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div id="filter">
+      <button id="sale">Sale</button>
+      <button id="nosale">No sale</button>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
   </body>
 </html>
