@@ -19,7 +19,7 @@ function Tour(el) {
         this.el.removeClass('is-fetching');
       }
     });
-  }
+  };
   this.el.on('click', 'button', this.fetchPhotos);
 }
 $(document).ready(function() {
